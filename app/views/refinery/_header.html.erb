@@ -1,0 +1,20 @@
+  <nav class="top-bar">
+    <ul>
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <%= link_to Refinery::Core.site_name, refinery.root_path %>
+        </h1>
+      </li>
+      <li class="toggle-topbar"><a href="#"></a></li>
+      <%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
+      <div style="float:right; margin-top:7px;" class="three mobile-three columns">
+              <input placeholder="search" type="text" />
+            </div>
+    </ul>
+
+
+
